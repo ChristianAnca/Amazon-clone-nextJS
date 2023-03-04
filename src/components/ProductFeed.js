@@ -55,3 +55,5 @@ function ProductFeed({ products }) {
 }
 
 export default ProductFeed
+
+// ..

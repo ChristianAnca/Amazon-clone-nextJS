@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import Image from 'next/image';
 import { StarIcon } from '@heroicons/react/solid';
-import Currency from "react-currency-formatter";
+import numeral from 'numeral';
 
 const MAX_RATING = 5;
 const MIN_RATING = 1;
@@ -32,7 +32,8 @@ const [hasPrime] = useState(Math.random() < 0.5)
 
         <div className='mb-5'>
 
-                <Currency quantity={price} currency='USD'/>
+                {/* <Currency quantity={price} currency='USD'/> */}
+                <h4>{numeral(price).format('$0,0.00')}</h4>
 
         </div>
 

@@ -10,7 +10,7 @@ export default function Home({products}) {
         <title>Amazon Clone</title>
       </Head>
 
-      
+      {/* test! */}
       
         {/* Header */}
         <Header />
